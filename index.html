@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>贪吃蛇项目</title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		.dom{
+			width: 600px;
+			height: 600px;
+			margin:0 auto;
+			position: relative;
+		}
+		.row{
+			overflow: hidden;
+		}
+		.col{
+			float: left;
+			width: 30px;
+			height: 30px;
+			border: 1px solid #5AC3E0;
+			box-sizing:border-box;
+		}
+		.alert{
+			display: none;
+			position: absolute;
+			width: 300px;
+			height: 200px;
+			left:50%;
+			margin-left: -150px;
+			top: 50%;
+			margin-top:-150px;
+			background-color: #fff;
+			box-shadow: 0 0 20px #969696;
+		}
+		.alert .p {
+			font-size: 30px;
+			line-height: 90px;
+			margin-top: 20px;
+			text-align: center;
+		}
+		.startBtn{
+			display: block;
+			border: 2px solid #00B22D;
+			border-radius: 5px;
+			background-image: -webkit-linear-gradient(top , #1A6600 ,#00D936);
+			width: 100px;
+			height: 50px;
+			line-height: 50px;
+			font-size: 20px;
+			color: #fff;
+			margin:0 auto;
+			outline: none;
+			cursor:pointer;
+		}
+	</style>
+</head>
+<body>
+	<script type="text/javascript" src="js/Game.js"></script>
+	<script type="text/javascript" src="js/Snake.js"></script>
+	<script type="text/javascript" src="js/Map.js"></script>
+	<script type="text/javascript" src="js/Food.js"></script>
+	<script type="text/javascript" src="js/Block.js"></script>
+	<script type="text/javascript">
+		var pic_object = {
+			head_pic : ["images/1.png" , "images/2.png" , "images/3.png" , "images/4.png"],
+			body_pic : ["images/5.png"],
+			tail_pic : ["images/6.png" , "images/7.png" , "images/8.png" , "images/9.png"]
+		}
+		var map = new Map(20 ,20 ,600 ,600);
+		var snake = new Snake(pic_object);
+		var food = new Food( 2, 6 , "images/food.png");
+		var block = new Block("images/block.png");
+		var game = new Game(map , snake , food , block);
+	</script>
+	
+</body>
+</html>

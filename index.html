@@ -66,14 +66,14 @@
 	<script type="text/javascript" src="js/Block.js"></script>
 	<script type="text/javascript">
 		var pic_object = {
-			head_pic : ["images/1.png" , "images/2.png" , "images/3.png" , "images/4.png"],
-			body_pic : ["images/5.png"],
-			tail_pic : ["images/6.png" , "images/7.png" , "images/8.png" , "images/9.png"]
+			head_pic : ["http://gitlab.icketang.com/ickt_17_cy/eatSnake/blob/master/images/1.png" , "http://gitlab.icketang.com/ickt_17_cy/eatSnake/blob/master/images/2.png" , "http://gitlab.icketang.com/ickt_17_cy/eatSnake/blob/master/images/3.png" , "http://gitlab.icketang.com/ickt_17_cy/eatSnake/blob/master/images/4.png"],
+			body_pic : ["http://gitlab.icketang.com/ickt_17_cy/eatSnake/blob/master/images/5.png"],
+			tail_pic : ["http://gitlab.icketang.com/ickt_17_cy/eatSnake/blob/master/images/6.png" , "http://gitlab.icketang.com/ickt_17_cy/eatSnake/blob/master/images/7.png" , "http://gitlab.icketang.com/ickt_17_cy/eatSnake/blob/master/images/8.png" , "http://gitlab.icketang.com/ickt_17_cy/eatSnake/blob/master/images/9.png"]
 		}
 		var map = new Map(20 ,20 ,600 ,600);
 		var snake = new Snake(pic_object);
-		var food = new Food( 2, 6 , "images/food.png");
-		var block = new Block("images/block.png");
+		var food = new Food( 2, 6 , "http://gitlab.icketang.com/ickt_17_cy/eatSnake/blob/master/images/food.png");
+		var block = new Block("http://gitlab.icketang.com/ickt_17_cy/eatSnake/blob/master/images/block.png");
 		var game = new Game(map , snake , food , block);
 	</script>
 	

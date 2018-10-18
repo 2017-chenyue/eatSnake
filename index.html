@@ -59,21 +59,21 @@
 	</style>
 </head>
 <body>
-	<script type="text/javascript" src="eatSnake/js/Game.js"></script>
-	<script type="text/javascript" src="eatSnake/js/Snake.js"></script>
-	<script type="text/javascript" src="eatSnake/js/Map.js"></script>
-	<script type="text/javascript" src="eatSnake/js/Food.js"></script>
-	<script type="text/javascript" src="eatSnake/js/Block.js"></script>
+	<script type="text/javascript" src="js/Game.js"></script>
+	<script type="text/javascript" src="js/Snake.js"></script>
+	<script type="text/javascript" src="js/Map.js"></script>
+	<script type="text/javascript" src="js/Food.js"></script>
+	<script type="text/javascript" src="js/Block.js"></script>
 	<script type="text/javascript">
 		var pic_object = {
-			head_pic : ["eatSnake/images/1.png" , "eatSnake/images/2.png" , "eatSnake/images/3.png" , "eatSnake/images/4.png"],
-			body_pic : ["eatSnake/images/5.png"],
-			tail_pic : ["eatSnake/images/6.png" , "eatSnake/images/7.png" , "eatSnake/images/8.png" , "eatSnake/images/9.png"]
+			head_pic : ["images/1.png" , "images/2.png" , "images/3.png" , "images/4.png"],
+			body_pic : ["images/5.png"],
+			tail_pic : ["images/6.png" , "images/7.png" , "images/8.png" , "images/9.png"]
 		}
 		var map = new Map(20 ,20 ,600 ,600);
 		var snake = new Snake(pic_object);
-		var food = new Food( 2, 6 , "eatSnake/images/food.png");
-		var block = new Block("eatSnake/images/block.png");
+		var food = new Food( 2, 6 , "images/food.png");
+		var block = new Block("images/block.png");
 		var game = new Game(map , snake , food , block);
 	</script>
 	
